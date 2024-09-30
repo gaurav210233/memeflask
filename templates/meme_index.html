@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Flask Meme Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.2em;
+        }
+
+        img {
+            max-width: 90%; /* Set a maximum width to keep it responsive */
+            width: 600px; /* Set a fixed width for larger display */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World! Here are some cute memes for you!</h1>
+        <p>Here is your meme - make sure to watch it in 30 seconds as a new one will appear.</p>
+        <p><img src="{{ meme_pic }}" alt="Meme Image"></p>
+        <p>The meme is from the "{{ subreddit }}" subreddit.</p>
+    </div>
+</body>
+</html>
